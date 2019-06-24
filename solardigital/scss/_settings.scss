@@ -1,0 +1,55 @@
+
+//colors
+$black: #000000;
+$white: #ffffff;
+
+$activeColor: #2e73fe;
+$fontColor: #1e2945;
+$hoverColor: #4ccd9b;
+$bgColor: #fbfcfd;
+$borderColor: #f7f7f7;
+$solarLogo: #93b2dc;
+
+$redGradient: linear-gradient(-45deg, #ff7676 0%, #f54ea2 100%);
+$orangeGradient: linear-gradient(-49deg, #fce38a 0%, #f38181 100%);
+$blueGradient: linear-gradient(-45deg, rgba(23, 234, 217, 0.1) 0%, #22d9db 34%, #6078ea 100%);
+$greenGradient: linear-gradient(135deg, #43e695 0%, #3bb2b8 100%);
+$btnGradient: linear-gradient(182deg, #00f9ff 0%, #00d0f1 100%);
+$socIcon: linear-gradient(-44deg, #1acbfd 0%, #345aff 100%);
+
+
+//variables
+
+$fontFamily: 'Qanelas', sans-serif;
+$baseFontSize: 18px;
+$maxW: 1350px;
+
+// 
+html {
+  font-size: $baseFontSize;
+}
+
+body {
+  font-size: $baseFontSize;
+  font-family: $fontFamily;
+  background-color: $bgColor;
+  color: $fontColor;
+}
+
+img {
+	max-width: 100%;
+}
+
+.wrapper{
+	width: $maxW;
+	margin: 0 auto;
+	padding: 0 25px;
+}
+
+.p-sides{
+	padding: 0 150px;
+}
+
+.rel{
+	position: relative;
+}

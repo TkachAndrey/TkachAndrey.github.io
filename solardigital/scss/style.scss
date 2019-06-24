@@ -1,0 +1,563 @@
+@import "fonts";
+@import "reset";
+@import "settings";
+@import "rem";
+
+/*********************************************/
+
+.header{
+	padding: rem(30px);
+	background-image: url(../img/header_bg3.png), url(../img/header_bg2.png), url(../img/header_bg1.png), linear-gradient(-27deg, #1acbfd 0%, #345aff 98%), ;
+	background-position: bottom left;
+	background-repeat: no-repeat;
+	min-height: 100vh;
+	color: $white;
+	&__container{
+		display: flex;
+		flex-direction: column;
+		height: 90vh;
+	}
+	&__top{
+		display: flex;
+		justify-content: space-between;
+		flex: 1 0 auto;
+	}
+	&__logo{
+		&_link{
+			position: relative;
+			margin-right: rem(30px);
+			&::after{
+				content: "";
+				display: block;
+				height: 20px;
+				width: 1px;
+				opacity: .8;
+				position: absolute;
+				top: 0;
+				right: rem(-15px);
+				background-color:#FFF;
+				cursor: default;
+			}
+		}
+
+		&_lang{
+			padding-right: rem(12px);
+			background: url(../img/arrowDown.svg) no-repeat 90% 50%;
+			background-color: transparent;
+			border: none;
+			color: #ffffff;
+			font-family: $fontFamily;
+			font-size: rem(15px);
+			font-weight: 500;
+			text-transform: uppercase;
+			outline: none;
+			appearance: none;
+			position: relative;
+			&Item{
+				&[value=en] *{
+					// display: none;
+					background-color: red;
+				}
+			}
+			&Item{
+				// &[value="en"] h1.header__middleBlock_h1{
+				// 	display: block;
+				// }
+			}
+		}
+	}
+
+	&__nav{
+		position: relative;
+		&::after{
+			content: "";
+			display: block;
+			position: absolute;
+			top: 0;
+			// right: 50%;
+			right: 52.5%;
+			width: 1px;
+			height: 30px;
+			background-color: #FFF;
+			opacity: .3;
+		}
+		&_link{
+			padding: rem(5px) rem(10px);
+			margin: 0 rem(10px);
+			font-size: rem(15px);
+			font-weight: 500;
+			color: $white;
+			border: 1px solid transparent;
+		}
+		&_link:hover{
+			border-radius: 4px;
+			border: 1px solid $white;
+		}
+	}
+	&__nav.en{
+		&::after{
+			right: 47%;
+		}
+	}
+	&__middleBlock{
+		flex: 1 0 auto;
+		width: 63%;
+		margin: 0 auto;
+		text-align: center;
+		&_h1{
+			font-family: $fontFamily;
+			font-size: rem(70px);
+			font-weight: 500;
+			letter-spacing: 0.16px;
+			margin-bottom: rem(15px);
+			line-height: 70px;
+		}
+		&_p{
+			color: $white;
+			font-family: $fontFamily;
+			font-size: rem(24px);
+			font-weight: 400;
+			letter-spacing: 0.36px;
+			margin-bottom: rem(30px);
+		}
+		&_btn{
+			padding: rem(15px);
+			box-shadow: 0 8px 14px rgba(0, 107, 206, 0.3);
+			border-radius: 4px;
+			background: $btnGradient;
+			color: $white;
+			font-weight: 500;
+			font-size: $baseFontSize;
+			border: none;
+			cursor: pointer;
+			transition: all 2s ease;
+			&:hover{
+				transform: rotateX(360deg);
+				color: $activeColor;
+			}
+		}
+	}
+}
+
+
+.advantage{
+	background-color: $bgColor;
+	margin-bottom: -20px;
+	&__block{
+		transform: translateY(-50%);
+		padding: 0 20px;
+		// padding: rem(73px) rem(140px) rem(77px) rem(135px);
+		background-color: $white;
+		border-radius: 6px;
+		display: flex;
+		flex-wrap: wrap;
+		box-shadow: 0 40px 40px rgba(0, 0, 0, 0.03);
+		&_item{
+			padding: 70px;
+			display: flex;
+			flex-basis: 50%;
+			align-items: center;
+			&:nth-child(1){
+				border-right: 1px solid $borderColor;
+				border-bottom: 1px solid $borderColor;
+			}
+			&:nth-child(2){
+				border-bottom: 1px solid $borderColor;
+			}
+			&:nth-child(3){
+				border-right: 1px solid $borderColor;
+			}
+			&:nth-child(4){
+				border-left: 1px solid $borderColor;
+				border-top: 1px solid $borderColor;
+			}
+
+		}
+		&_icon{
+			border-radius: 4px;
+			&1{
+				background-image: $redGradient;
+				& .advantage__block_svg{
+					transform: rotateY(180deg);
+				}
+			}
+			&2{
+				background-image: $orangeGradient;			}
+			&3{
+				background-image: $blueGradient;
+			}
+			&4{
+				background-image: $greenGradient;
+			}
+		}
+
+		&_svg{
+			padding: 10px;
+			width: 48px;
+			height: 48px;
+		}
+		&_desc{
+			display: inline-block;
+			padding: 5px 0 5px rem(30px);
+		}
+	}
+}
+
+.offers{
+	min-height: 100%;
+	&__tabs{
+		margin: 0 auto;
+		padding: rem(15px) rem(33px);
+		display: flex;
+		justify-content: space-between;
+		position: relative;
+		background-color: $white;
+		box-shadow: 0 2px 10px rgba(0, 0, 0, 0.03);
+		border-radius: 4px;
+		&_item{
+
+		}
+		&_label{
+			display: block;
+			cursor: pointer;
+			color: $black;
+			font-weight: 400;
+			font-size: rem(15px);
+			padding: rem(15px) rem(20px);
+			transition: all 2s ease;
+			&:hover{
+				color: $activeColor;
+			}
+			
+		}
+
+		&_radio{
+			position: absolute;
+			clip: rect(0, 0, 0, 0);
+			&:checked ~ .offers__tabs_label{
+				color: $activeColor;
+				position: relative;
+			}
+
+			&:checked ~ .offers__tabs_label::after{
+				content: "";
+				position: absolute;
+			    width: 100%;
+			    height: 100%;
+			    left: 0;
+			    top: 0;
+			    border-bottom: 2px solid  $activeColor;
+			    transition: transform .7s linear;
+			}
+			
+			&:checked ~ .offers__tabs_label ~ .tabs__content{
+				z-index: 1;
+			}
+		}
+
+
+		&_h2{
+			font-size: rem(36px);
+			font-weight: 400;
+			letter-spacing: -1px;
+			margin-bottom: rem(10px);
+		}
+		&_p{
+			font-size: $baseFontSize;
+			font-weight: 400;
+			line-height: rem(29px);
+		}
+	}
+	.tabs__content{
+		padding: rem(100px) rem(15px) rem(400px) 0;
+		background: $bgColor;
+		display: flex;
+		justify-content: space-between;
+		position: absolute;
+		width: 100%;
+		top: rem(50px);
+		left: 0;
+		right: 0;
+		bottom: 0;
+		&_desc{
+			flex-basis: 47%;
+			padding-top: rem(50px);
+		}
+		&_icon{
+			flex-basis: 33%;
+		}
+	}
+	&__ball{
+		position: absolute;
+		color: $white;
+		font-family: $fontFamily;
+		z-index: 5;
+		text-align: center;
+		border-radius: 50%;
+		font-weight: 900;
+		&_1{
+			padding: 15px;
+			width: rem(90px);
+			height: rem(90px);
+			background-image: $blueGradient;
+			transform: rotate(-10deg);
+			font-size: rem(50px);
+			letter-spacing: 1.75px;
+			left: rem(-150px);
+			top: rem(150px);
+		}
+		&_2{
+			padding: 6px;
+			background-image: $redGradient;
+			width: rem(33px);
+			height: rem(33px);
+			transform: rotate(-10deg);
+			left: 50%;
+			bottom: rem(-450px);
+			font-size: rem(16px);
+		}
+		&_3{
+			background-image: $greenGradient;
+			width: rem(41px);
+			height: rem(41px);
+			transform: rotate(27deg);
+			font-size: rem(30px);
+			left: rem(-100px);
+			bottom: rem(-400px);
+		}
+		&_4{
+			background-image: $orangeGradient;
+			width: rem(26px);
+			height: rem(26px);
+			transform: rotate(27deg);
+			font-size: rem(20px);
+			bottom: rem(-110px);
+			left: rem(230px);
+		}
+	}
+	&__cloud{
+		z-index: 5;
+		position: absolute;
+		&_1{
+			bottom: rem(-300px);
+			left: rem(-350px);
+		}
+		&_2{
+			bottom: rem(-500px);
+			left: rem(100px);
+		}
+	}
+}
+
+.assets{
+	margin-top: rem(550px);
+	padding-bottom: rem(250px);
+	&__block{
+		margin: 0 rem(20px);
+		padding: rem(150px) rem(193px);
+		background: $white;
+		text-align: center;
+		&_h3{
+			color: $fontColor;
+			font-family: $fontFamily;
+			font-size: rem(40px);
+			font-weight: 400;
+			letter-spacing: 0.09px;
+			// margin-bottom: rem(50px);
+		}
+		&_brands{
+			display: grid;
+			grid-template-columns: 5;
+			grid-template-rows: 2;
+			grid-gap: rem(30px);
+			align-items: center;
+			justify-items: center;
+			margin-top: rem(50px);
+		}
+		&_badoo{
+			grid-column: 1/2;
+			grid-rows: 1/2;
+		}
+		&_tesla{
+			grid-column: 2/3;
+			grid-rows: 1/2;
+		}
+		&_gilette{
+			grid-column: 3/4;
+			grid-rows: 1/2;
+		}
+		&_coca{
+			grid-column: 4/5;
+			grid-rows: 1/2;
+		}
+		&_netflix{
+			grid-column: 5/6;
+			grid-rows: 1/2;
+		}
+		&_microsoft{
+			grid-column: 1/2;
+			grid-rows: 2/3;
+		}
+		&_disney{
+			grid-column: 2/3;
+			grid-rows: 2/3;
+		}
+		&_facebook{
+			grid-column: 3/4;
+			grid-rows: 2/3;
+		}
+		&_google{
+			grid-column: 4/5;
+			grid-rows: 2/3;
+		}
+		&_toyota{
+			grid-column: 5/6;
+			grid-rows: 2/3;
+		}
+	}
+}
+
+.mobApp{
+	background: url(../img/mobApp_bg.png) no-repeat 25% 0 $bgColor;
+	&__block{
+		padding: 0 rem(20px) 0 rem(80px);
+		display: flex;
+		justify-content: space-between;
+		&_desc{
+			max-width: 40%;
+			padding-top: rem(210px);
+			padding-bottom: rem(260px);
+		}
+		&_h4{
+			color: $white;
+			font-family: $fontFamily;
+			font-size: rem(40px);
+			font-weight: 400;
+			letter-spacing: 0.09px;
+			line-height: rem(39px);
+			margin-bottom: rem(12px);
+		}
+		&_p{
+			color: $white;
+			font-size: rem(19px);
+			font-weight: 300;
+			line-height: rem(26px);
+		}
+		&_cellPhone{
+			margin-top: rem(-135px);
+			&1{
+				margin-right: 0;
+				margin-left: auto;
+			}
+			&2{
+				margin-bottom: rem(90px);
+				margin-right: auto;
+				margin-left: 0;
+			}
+		}
+	}
+}
+
+.saleBino{
+	padding: rem(215px) 0 rem(125px);
+	&__block{
+		padding: 0 rem(30px);
+		&_h2{
+			font-size: rem(40px);
+			font-weight: 400;
+			letter-spacing: 0.09px;
+			margin-bottom: rem(30px);
+		}
+		&_p{
+			column-count: 2;
+			column-gap: 140px;
+			font-weight: 400;
+			line-height: 26px;
+		}
+	}
+	
+}
+
+.footer{
+	background: url(../img/footer_bg.png) no-repeat center bottom;
+	padding: rem(100px) 0 rem(50px);
+	&__block{
+		padding: 0 rem(50px) rem(25px);
+		display: flex;
+		justify-content: space-between;
+		line-height: 26px;
+		&_h5{
+			font-size: rem(16px);
+			font-weight: 500;
+		}
+		&_nav{
+			display: flex;
+			flex-direction: column;	
+		}
+		&_link{
+			color: $fontColor;
+			font-size: rem(15px);
+			font-weight: 400;
+			transition: all 1s ease;
+			&:hover{
+				color: $activeColor;
+			}
+		}
+		&_stores{
+			&Link{
+				display: inline-block;
+				height: 36px;
+				width: 124px;
+				margin: 0 5px;
+				transition: all 1s ease;
+				&:hover{
+					transform: scale(1.1);
+				}
+			}
+		}
+		&_iconsCopy{
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
+		}
+	}
+	&__socIcons{
+		display: flex;
+		justify-content: space-between;
+	    &_link{
+	    	background: $socIcon;
+	    	border-radius: 6px;
+	    	width: 38px;
+	    	height: 38px;
+	    	padding: 10px;
+	    	transition: all 1s ease;
+			&:hover{
+				transform: scale(1.3);
+			}
+	    }
+	    &_svg{
+	    	width: 100%;
+	    	height: 100%;
+	    }
+	}
+	&__copyRight{
+		display: flex;
+        align-items: center;
+		&_design{
+			color: $solarLogo;
+			font-family: "CircularStd";
+			font-size: rem(10px);
+			font-weight: 300;
+			margin: 0 8px;
+		}
+	}
+}
+
+
+// transition: all 1s ease;
+// &:hover{
+// 	transform: scale(1.1);
+// }
+
+
+

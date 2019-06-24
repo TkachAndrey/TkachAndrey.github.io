@@ -1,0 +1,39 @@
+//fonts
+@font-face {
+    font-family: 'CircularStd';
+    src: url('../fonts/CircularStd-Book.otf') format('opentype');
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Qanelas';
+    src: url('../fonts/Qanelas-Black.eot');
+    src: local('Qanelas Black'), local('Qanelas-Black'),
+        url('../fonts/Qanelas-Black.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Qanelas-Black.woff') format('woff'),
+        url('../fonts/Qanelas-Black.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Qanelas';
+    src: url('../fonts/Qanelas-Regular.eot');
+    src: local('Qanelas Regular'), local('Qanelas-Regular'),
+        url('../fonts/Qanelas-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Qanelas-Regular.woff') format('woff'),
+        url('../fonts/Qanelas-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Qanelas';
+    src: url('../fonts/Qanelas-Medium.eot');
+    src: local('Qanelas Medium'), local('Qanelas-Medium'),
+        url('../fonts/Qanelas-Medium.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Qanelas-Medium.woff') format('woff'),
+        url('../fonts/Qanelas-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}

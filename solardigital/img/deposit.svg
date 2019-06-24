@@ -1,0 +1,87 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="421" height="416" viewBox="0 0 421 416">
+	<defs>
+		<linearGradient id="hwema" x1="24.37" x2="48.42" y1="79.75" y2="315.81" gradientUnits="userSpaceOnUse">
+			<stop offset="0" stop-color="#1acbfd"/>
+			<stop offset="1" stop-color="#345aff"/>
+		</linearGradient>
+		<linearGradient id="hwemb" x1="163.29" x2="201.14" y1="210.79" y2="360.03" gradientUnits="userSpaceOnUse">
+			<stop offset="0" stop-color="#1acbfd"/>
+			<stop offset="1" stop-color="#345aff"/>
+		</linearGradient>
+		<linearGradient id="hwemc" x1="207.79" x2="198.25" y1="142.14" y2="381.02" gradientUnits="userSpaceOnUse">
+			<stop offset="0" stop-color="#1acbfd"/>
+			<stop offset="1" stop-color="#345aff"/>
+		</linearGradient>
+		<linearGradient id="hwemd" x1="320.49" x2="54" y1="415.23" y2="344.87" gradientUnits="userSpaceOnUse">
+			<stop offset="0" stop-color="#1cffbe"/>
+			<stop offset="1" stop-color="#35e9f2"/>
+		</linearGradient>
+		<linearGradient id="hwemf" x1="320.49" x2="54" y1="162.57" y2="50.16" gradientUnits="userSpaceOnUse">
+			<stop offset="0" stop-color="#1cffbe"/>
+			<stop offset="1" stop-color="#35e9f2"/>
+		</linearGradient>
+		<linearGradient id="hwemg" x1="49.8" x2="238.43" y1="36.21" y2="269.45" gradientUnits="userSpaceOnUse">
+			<stop offset="0" stop-color="#1acbfd"/>
+			<stop offset="1" stop-color="#345aff"/>
+		</linearGradient>
+		<linearGradient id="hwemh" x1="302.58" x2="430.73" y1="115.43" y2="224.46" gradientUnits="userSpaceOnUse">
+			<stop offset="0" stop-color="#1acbfd"/><stop offset="1" stop-color="#345aff"/>
+		</linearGradient>
+		<linearGradient id="hwemi" x1="332.02" x2="290" y1="190" y2="153.89" gradientUnits="userSpaceOnUse">
+			<stop offset="0" stop-color="#fce38a"/>
+			<stop offset="1" stop-color="#f38181"/>
+		</linearGradient>
+		<clipPath id="hweme">
+			<path d="M93.93 313.47h227.476v102H93.93z"/>
+		</clipPath>
+	</defs>
+	<g>
+		<g>
+			<g>
+				<g>
+					<path fill="#39b295" d="M208.233 11.22L183.04 74.199h138.562V11.22H208.233"/>
+				</g>
+				<g>
+					<path fill="#59bba8" d="M94.87 74.199h113.369V11.22H94.87z"/>
+				</g>
+				<g>
+					<path fill="url(#hwema)" d="M.39 86.793v251.915h88.176L50.776 36.41C23.064 36.41.39 59.083.39 86.793"/>
+				</g>
+				<g>
+					<path fill="#b72d33" d="M50.78 36.41v302.298l157.456-25.191V36.41H50.78"/>
+				</g>
+				<g>
+					<path fill="url(#hwemb)" d="M12.45 326.065V313.47h346.405v50.383H50.24c-20.837 0-37.79-16.952-37.79-37.788z"/>
+				</g>
+				<g>
+					<path fill="url(#hwemc)" d="M371.988 381.964a6 6 0 0 1-6 6H50.776c-27.45 0-49.772-21.948-50.374-49.252H.39c0-.189.001-.377.003-.566a51.494 51.494 0 0 1-.003-.565l.013-.013C1.01 310.27 23.33 288.33 50.776 288.33h345.322v19.19a6 6 0 0 1-6 6h-18.11zM50.776 362.772h296.019v-49.251H50.776c-13.725 0-24.886 10.974-25.187 24.626.301 13.652 11.462 24.625 25.187 24.625z"/>
+				</g>
+				<g>
+					<g>
+						<path fill="url(#hwemd)" d="M93.93 313.47h227.476v102H93.93z"/>
+					</g>
+					<g clip-path="url(#hweme)" opacity=".67">
+						<g>
+							<text fill="#fff" dominant-baseline="text-before-edge" font-family="'Qanelas Black','Qanelas-Black'" font-size="80" letter-spacing="5.8" transform="translate(135 283)">
+								<tspan>$</tspan>
+							</text>
+						</g>
+					</g>
+				</g>
+				<g>
+					<path fill="url(#hwemf)" d="M93.93 0h227.476v162.958H93.93z"/>
+				</g>
+				<g opacity=".67"/>
+				<g>
+					<path fill="url(#hwemg)" d="M49.8 36.21h340.306a6 6 0 0 1 6 6v246.359H49.8z"/>
+				</g>
+				<g>
+					<path fill="url(#hwemh)" d="M263.69 165.43c0-27.614 22.386-50 50-50H415a6 6 0 0 1 6 6v88.717a6 6 0 0 1-6 6H313.69c-27.614 0-50-22.386-50-50z"/>
+				</g>
+			</g>
+			<g>
+				<path fill="url(#hwemi)" d="M313 190c12.703 0 23-10.297 23-23s-10.297-23-23-23-23 10.297-23 23 10.297 23 23 23z"/>
+			</g>
+		</g>
+	</g>
+</svg>
